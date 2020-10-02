@@ -15,6 +15,8 @@ public class AxisBank {
 		driver.get("https://www.facebook.com/");
 		Dimension d=new Dimension(800,400);
 		driver.manage().window().setSize(d);
+		WebElement txtUserName = driver.findElement(By.id("email"));
+		txtUserName.sendKeys("sindhuja@gmail.com");
 		WebElement txtPassword = driver.findElement(By.id("pass"));
 		txtPassword.sendKeys("Sindhuja");
 	}
